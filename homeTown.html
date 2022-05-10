@@ -1,0 +1,118 @@
+<html>
+<head>
+<link rel="stylesheet" href="./external.css">
+<style>
+    body {
+  background-color: lightgray !important;
+    }
+  h1{
+    color: maroon;
+  text-align: center;
+  }
+ 
+.collapsible {
+  background-color: rgb(218, 142, 113);
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: 1px solid white;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: rgb(190, 221, 13);
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+p{
+    color: brown;
+}
+</style>
+  
+  
+  </style>
+
+
+</head>
+<h1>HomeTown Page</h1>
+
+
+
+<a href="./home.html" style=" float: left;
+color: tomato;"> >>Go To Homepage</a>
+<br>
+<br>
+<body>
+
+    <h2>Animated Collapsibles</h2>
+
+<p>A Collapsible and Expand Function</p>
+<button class="collapsible">About Hyderabad City!</button>
+<div class="content">
+  <p>The city is noted for its unique culture</p>
+  <p>City of pearls</p>
+</div>
+<button class="collapsible">Delicious Foods in Hyderabad!</button>
+<div class="content">
+  <p>The city is noted for its unique culture</p>
+  <p>City of pearls</p>
+</div>
+<button class="collapsible">Monuments in Hyderabad!</button>
+<div class="content">
+  <p>The city is noted for its unique culture</p>
+  <p>City of pearls</p>
+</div>
+
+<p>It is Telangana's largest and most-populous city and is the major urban centre for all of south-central interior India.</p>
+<h2>Some beutiful places in my HomeTown....</h2>
+<p> Night view of Charminar </p>
+<img src="./images/charminar.webp">
+<p>Famous Golconda Fort</p>
+<img src="./images/golconda_fort.jpg">
+<p>Devotional Places</p>
+<img src="./images/birlamandir.jpg">
+<p>Delicious dishes in Hydeabad</p> 
+<img src="./images/biryani.jpg">
+<img src="./images/haleem.jpg">
+
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+</body>
+</html>
+

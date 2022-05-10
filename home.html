@@ -1,0 +1,116 @@
+<html>
+<head>
+<link rel="stylesheet" href="./external.css">
+<style>
+  body {
+background-color: aquamarine !important;
+  }
+h1{
+  color: maroon;
+text-align: center;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: peru;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: lightskyblue;
+}
+.active {
+  background-color: lightskyblue;
+}
+img{
+  height: 30%;
+  width: 30%;
+}
+</style>
+<script>
+  function before(){
+      document.getElementById('myImage')
+      .src="./images/flower1.jpg";
+     
+  }
+   
+  function afterr(){
+      document.getElementById('myImage')
+      .src="./images/flower2.jpg";
+     
+  }
+  function last(){
+      document.getElementById('myImage')
+      .src="./images/flower3.jpg";
+     
+  }
+</script>
+</head>
+
+<body>
+<ul>
+  <li><a  href="./home.html">Home</a></li>
+  <li><a href="./about.html">About</a></li>
+  <li><a href="./hobbies.html">Hobby</a></li>
+  <li><a href="./homeTown.html">Home Town</a></li>
+</ul>
+<h1>Home Page....</h1>
+
+<br>
+<a href="./about.html" style=" float: right;
+color: tomato;"> >>About Page</a>
+<h2>Welcome to Gamidi Murali Krishna's Software Consultancy... expertise in all professional courses and 
+  trednding Technologies</h2>
+<img src="./images/experttt.jpg" style="padding-right: 85px;
+padding-left: 111px;">
+
+<img
+ src="./images/expert.jpg">
+<br>
+  <br>
+  <h2>Expertise in......</h2>
+  
+    <a href="" >Software Training</a><br>
+   <a href="" >Placements</a><br>
+    <a href="" >Consultancy</a>
+  
+  <h4>To know more about Angular Visit </h4>
+    <a href="https://angular.io/guide/cli-builder">Angular Tutorial</a>
+    <br>
+    <br>
+    <img id="myImage"
+    src="./images/flower1.jpg">
+    <br>
+    <br>
+    <div class="button">
+      <button class="btn btn-warning"
+              onclick=before();>
+          Before
+      </button>
+      <button  class="btn btn-success"
+               onclick=afterr();>
+          Afterr
+      </button>
+      <button  class="btn btn-success"
+               onclick=last();>
+          Last
+      </button>
+   </div>
+   
+    </body>
+    </html>
+  
